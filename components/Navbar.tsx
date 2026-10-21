@@ -55,25 +55,25 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Corporate Logos */}
         <div className="hidden lg:flex items-center gap-4 md:gap-6">
           {/* United Tractors Logo */}
-          <div className="relative h-7 md:h-8 w-28 md:w-32 flex items-center justify-center">
+          <div className="relative h-10 md:h-12 w-36 md:w-44 flex items-center justify-center">
             <Image
               src={logoUT}
               alt="United Tractors - member of ASTRA"
-              width={140}
-              height={32}
-              className="object-contain max-h-full"
+              width={180}
+              height={52}
+              className="object-contain w-auto h-full"
               priority
             />
           </div>
 
           {/* GSI Logo */}
-          <div className="relative h-7 md:h-8 w-10 md:w-12 flex items-center justify-center">
+          <div className="relative h-10 md:h-12 w-14 md:w-16 flex items-center justify-center">
             <Image
               src={logoGSI}
               alt="Global Service Indonesia"
-              width={50}
-              height={32}
-              className="object-contain max-h-full"
+              width={64}
+              height={52}
+              className="object-contain w-auto h-full"
               priority
             />
           </div>

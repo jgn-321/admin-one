@@ -164,11 +164,8 @@ export default function LoginPage() {
             <div className="flex items-center justify-between mb-6 pb-5 border-b border-neutral-800">
               <div>
                 <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-                  Masuk Karyawan
+                  Login
                 </h1>
-                <p className="text-xs sm:text-sm text-neutral-400 mt-1">
-                  Pusat Layanan Administrasi Operasional
-                </p>
               </div>
               <div className="w-10 h-10 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center text-yellow-400 shrink-0">
                 <svg
@@ -301,7 +298,7 @@ export default function LoginPage() {
                   htmlFor="employee-nrp"
                   className="block text-xs font-semibold text-neutral-300 uppercase tracking-wider mb-2"
                 >
-                  NRP (Nomor Registrasi Pokok)
+                  NRP
                 </label>
                 <div className="relative">
                   <input
@@ -355,9 +352,6 @@ export default function LoginPage() {
                     )}
                   </button>
                 </div>
-                <p className="text-[11px] text-neutral-400 mt-1.5">
-                  Kredensial diverifikasi secara aman menggunakan sesi JWT terenkripsi.
-                </p>
               </div>
 
               {/* Submit Button */}
@@ -388,11 +382,11 @@ export default function LoginPage() {
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
                         />
                       </svg>
-                      <span>Memverifikasi Kredensial...</span>
+                      <span>Memuat....</span>
                     </>
                   ) : (
                     <>
-                      <span>Masuk ke ADMINONE</span>
+                      <span>Masuk</span>
                       <svg
                         width="16"
                         height="16"
@@ -411,36 +405,13 @@ export default function LoginPage() {
                 </button>
               </div>
             </form>
-
-            {/* Back to Home Link */}
-            <div className="mt-6 pt-5 border-t border-neutral-800 text-center">
-              <Link
-                href="/"
-                className="inline-flex items-center gap-1.5 text-xs text-neutral-400 hover:text-yellow-400 transition-colors"
-              >
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <line x1="19" y1="12" x2="5" y2="12" />
-                  <polyline points="12 19 5 12 12 5" />
-                </svg>
-                <span>Kembali ke Halaman Beranda</span>
-              </Link>
-            </div>
           </div>
         </div>
       </main>
 
       {/* Footer */}
       <footer className="w-full max-w-6xl mx-auto px-6 py-6 text-center text-xs text-neutral-400 border-t border-neutral-900 relative z-10">
-        &copy; 2025 PT United Tractors Tbk & PT Global Service Indonesia. Seluruh hak cipta dilindungi.
+        &copy; 2026 UT LJS. Seluruh hak cipta dilindungi.
       </footer>
     </div>
   );

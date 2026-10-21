@@ -2,9 +2,8 @@ import React from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroBanner } from "@/components/HeroBanner";
 import { SectionHeader } from "@/components/SectionHeader";
-import { ServiceGrid } from "@/components/ServiceGrid";
+import { CategoryTabs } from "@/components/CategoryTabs";
 import { ContactWidget } from "@/components/ContactWidget";
-import { CornerDecoration } from "@/components/CornerDecoration";
 import { QuickContactSidebar } from "@/components/QuickContactSidebar";
 import { SERVICE_ITEMS } from "@/data/services";
 
@@ -23,8 +22,7 @@ export default function Home() {
           {/* Section Divider Tab */}
           <SectionHeader title="Daftar Layanan" />
 
-          {/* Grid of Modular Service Cards (all using <a>) */}
-          <ServiceGrid items={SERVICE_ITEMS} />
+          <CategoryTabs items={SERVICE_ITEMS} />
         </div>
 
         {/* Bottom Area: Contact Support Widget */}
@@ -32,9 +30,6 @@ export default function Home() {
           <ContactWidget />
         </div>
       </main>
-
-      {/* Corner Decorative Aesthetic Artwork */}
-      <CornerDecoration />
 
       {/* Quick Contact Sidebar (only visible for specific NRPs) */}
       <QuickContactSidebar />

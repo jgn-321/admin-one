@@ -70,7 +70,7 @@ export const QuickContactSidebar: React.FC = () => {
           className="fixed right-0 top-24 z-40 bg-[#141414] text-[#EAB308] border border-neutral-700 border-r-0 rounded-l-lg px-3 py-3 shadow-2xl hover:bg-neutral-800 transition-all flex items-center gap-2 text-xs font-bold"
           title="Buka Quick Contact"
         >
-          <span>Quick Contact</span>
+          <span>GSI HO Contact</span>
         </button>
       )}
 
@@ -83,7 +83,7 @@ export const QuickContactSidebar: React.FC = () => {
         {/* Header: Quick Contact warna kuning emas + tombol minimize */}
         <div className="pt-6 pb-4 px-6 flex items-center justify-between">
           <h2 className="text-[#EAB308] text-base sm:text-lg font-medium tracking-wide">
-            Quick Contact
+            GSI HO Contact Support
           </h2>
           <button
             type="button"
@@ -139,17 +139,6 @@ export const QuickContactSidebar: React.FC = () => {
               </p>
             </a>
           ))}
-        </div>
-
-        {/* Footer info user yang sedang login */}
-        <div className="p-4 bg-[#0d0d0d] border-t border-neutral-800 text-[11px] text-neutral-400 flex items-center justify-between">
-          <div className="truncate mr-2">
-            <p className="text-white font-medium truncate">{user?.name}</p>
-            <p className="text-[10px] text-neutral-500 font-mono">NRP: {user?.nrp}</p>
-          </div>
-          <span className="shrink-0 px-2 py-0.5 rounded text-[10px] bg-yellow-400/10 text-yellow-400 border border-yellow-400/20 font-semibold">
-            GSI
-          </span>
         </div>
       </aside>
     </>

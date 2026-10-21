@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { CornerDecoration } from "./CornerDecoration";
 
 interface HeroBannerProps {
   title?: string;
@@ -24,6 +25,9 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
           className="object-cover object-center"
         />
       </div>
+
+      {/* Corner Decoration: Menimpa gambar background banner di bagian belakang teks */}
+      <CornerDecoration />
 
       {/* Hero Typography Content */}
       <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
