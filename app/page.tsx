@@ -5,6 +5,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceGrid } from "@/components/ServiceGrid";
 import { ContactWidget } from "@/components/ContactWidget";
 import { CornerDecoration } from "@/components/CornerDecoration";
+import { QuickContactSidebar } from "@/components/QuickContactSidebar";
 import { SERVICE_ITEMS } from "@/data/services";
 
 export default function Home() {
@@ -13,11 +14,11 @@ export default function Home() {
       {/* Top Navigation Bar */}
       <Navbar />
 
-      {/* Main Hero Banner with UT Headquarters */}
+      {/* Hero Banner with UT Headquarters */}
       <HeroBanner />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 relative z-10 flex flex-col justify-between">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24 sm:pb-28 relative z-10 flex flex-col justify-between">
         <div>
           {/* Section Divider Tab */}
           <SectionHeader title="Daftar Layanan" />
@@ -34,6 +35,9 @@ export default function Home() {
 
       {/* Corner Decorative Aesthetic Artwork */}
       <CornerDecoration />
+
+      {/* Quick Contact Sidebar (only visible for specific NRPs) */}
+      <QuickContactSidebar />
     </div>
   );
 }

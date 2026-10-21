@@ -4,7 +4,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: "tiket",
     title: "E-Form Pemesanan Tiket",
-    href: "https://admin.unitedtractors.com/services/tiket",
+    href: "https://bit.ly/FormPemesananTiketLJS",
     iconSrc: "/Airplane Take Off.png",
     iconType: "png",
     description: "Pengajuan dan reservasi tiket perjalanan dinas karyawan",
@@ -13,7 +13,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: "ff-karyawan",
     title: "Register FF Karyawan LJS",
-    href: "https://admin.unitedtractors.com/services/register-ff",
+    href: "https://bit.ly/RegisterFFLJS",
     iconSrc: "/Signing A Document.png",
     iconType: "png",
     description: "Pendaftaran formulir fasilitas dan kepatuhan karyawan LJS",
@@ -22,7 +22,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: "release-so-quot",
     title: "Permohonan Release SO - Quot",
-    href: "https://admin.unitedtractors.com/services/release-so-quot",
+    href: "https://bit.ly/ReleaseSOQuotLJS",
     iconSrc: "/Purchase Order.png",
     iconType: "png",
     description: "Permohonan otorisasi Sales Order dan Quotation",
@@ -31,7 +31,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: "bs-adv-online",
     title: "Permohonan BS / ADV Online",
-    href: "https://admin.unitedtractors.com/services/bs-adv-online",
+    href: "https://bit.ly/4bpiqCg",
     iconSrc: "/Receive Cash.png",
     iconType: "png",
     description: "Pengajuan Bon Sementara dan Advance kas operasional",
@@ -40,7 +40,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: "listrik-air-office-1",
     title: "Listrik dan Air Office - Mess Karyawan",
-    href: "https://admin.unitedtractors.com/services/listrik-air-office",
+    href: "https://bit.ly/ListrikdanAirLJS",
     iconSrc: "/Dam.png",
     iconType: "png",
     description: "Monitoring dan pelaporan penggunaan listrik dan air",
@@ -49,7 +49,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: "retribusi-air-tanah",
     title: "Retribusi Air Tanah LJS",
-    href: "https://admin.unitedtractors.com/services/retribusi-air-tanah",
+    href: "https://bit.ly/RetribusiAirTanahLJS",
     iconSrc: "/Water.png",
     iconType: "png",
     description: "Pengelolaan dan pembayaran retribusi air tanah",
@@ -58,7 +58,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: "pembelian-luar-bbm",
     title: "Data Pembelian Luar BBM LJS",
-    href: "https://admin.unitedtractors.com/services/pembelian-luar-bbm",
+    href: "https://bit.ly/DataBeliLuarBBMLJS",
     iconSrc: "/Gas Station.png",
     iconType: "png",
     description: "Pencatatan data pembelian BBM luar operasional LJS",
@@ -67,7 +67,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: "scan-invoice-bbm",
     title: "Scan Invoice BBM",
-    href: "https://admin.unitedtractors.com/services/scan-invoice-bbm",
+    href: "https://bit.ly/ScanInvoiceBBMLJShttps://bit.ly/ListOnetimesVendorLJS",
     iconSrc: "/Purchase Order.png",
     iconType: "png",
     description: "Digitalisasi dan unggah scan faktur invoice BBM",
