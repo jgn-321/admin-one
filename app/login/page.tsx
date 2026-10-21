@@ -112,6 +112,18 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-[#0e0e0e] text-neutral-100 flex flex-col justify-between relative overflow-hidden">
+      <div className="absolute inset-0 z-0" aria-hidden="true">
+        <Image
+          src="/login-background.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-black/65" />
+      </div>
+
       {/* Background Subtle Gradient & Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-b from-yellow-500/10 via-yellow-500/5 to-transparent blur-3xl pointer-events-none" />
 
