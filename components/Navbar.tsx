@@ -126,9 +126,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                 {isUserMenuOpen && (
                   <div className="absolute right-0 top-full mt-2 w-64 bg-neutral-900 border border-neutral-700 rounded-xl shadow-2xl overflow-hidden animate-[modalSlideIn_0.2s_ease-out] z-50">
                     <div className="px-4 py-3 bg-neutral-800/80 border-b border-neutral-700">
-                      <p className="text-[10px] text-neutral-400 uppercase tracking-wider font-semibold">
-                        Akun Terhubung
-                      </p>
                       <p className="text-sm font-bold text-white mt-0.5 truncate">
                         {user.name}
                       </p>
@@ -136,33 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         NRP: {user.nrp}
                       </p>
                     </div>
-
-                    {/* Ganti Akun -> Link ke Halaman Login */}
-                    <div className="p-1.5 border-b border-neutral-800">
-                      <Link
-                        href="/login"
-                        onClick={() => setIsUserMenuOpen(false)}
-                        className="w-full px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-800 hover:text-yellow-400 rounded-lg transition-colors flex items-center gap-2"
-                      >
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                          <circle cx="9" cy="7" r="4" />
-                          <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                        </svg>
-                        <span>Ganti Akun Karyawan</span>
-                      </Link>
-                    </div>
-
+                    
                     {/* Tombol Logout di dalam dropdown */}
                     <div className="p-1.5">
                       <button
