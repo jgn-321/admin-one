@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroBanner } from "@/components/HeroBanner";
+import { CornerDecoration } from "@/components/CornerDecoration";
 import { SectionHeader } from "@/components/SectionHeader";
 import { CategoryTabs } from "@/components/CategoryTabs";
 import { ContactWidget } from "@/components/ContactWidget";
@@ -9,12 +10,16 @@ import { SERVICE_ITEMS } from "@/data/services";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col relative bg-[#f3f4f6] text-neutral-900 overflow-x-hidden">
+    <div className="min-h-screen flex flex-col relative isolate bg-[#f3f4f6] text-neutral-900 overflow-x-hidden">
+      <CornerDecoration />
+
       {/* Top Navigation Bar */}
       <Navbar />
 
       {/* Hero Banner with UT Headquarters */}
-      <HeroBanner />
+      <div className="relative z-10">
+        <HeroBanner />
+      </div>
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24 sm:pb-28 relative z-10 flex flex-col justify-between">
