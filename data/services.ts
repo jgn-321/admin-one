@@ -92,15 +92,6 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     category: "ESR Support",
   },
   {
-    id: "ebook-adm",
-    title: "E-Book ADM",
-    href: "https://drive.google.com/drive/folders/1HAspjA88zYwptvFKMOnGMNLIm_WdYqO8",
-    iconSrc: "/Open Book.png",
-    iconType: "png",
-    description: "E-Book untuk ADM",
-    category: "ADM",
-  },
-  {
     id: "review-budget",
     title: "Link Review Budget 2026",
     href: "https://untr-my.sharepoint.com/:x:/g/personal/91317008_unitedtractors_com/IQCGpXfONN_qRqMfPwODyN0wAZRE2VaQV4C1_pc1-A6YquY?email=AyuM%40unitedtractors.com&e=PqoxU5",
@@ -134,6 +125,15 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     iconSrc: "/Data Quality.png",
     iconType: "png",
     description: "Data Energy LJS",
+    category: "ADM",
+  },
+  {
+    id: "ebook-adm",
+    title: "E-Book ADM",
+    href: "https://drive.google.com/drive/folders/1HAspjA88zYwptvFKMOnGMNLIm_WdYqO8",
+    iconSrc: "/Open Book.png",
+    iconType: "png",
+    description: "E-Book untuk ADM",
     category: "ADM",
   },
 ];
