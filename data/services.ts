@@ -111,11 +111,20 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   },
   {
     id: "recap-catering",
-    title: " Rekap Catering (Nama Karyawan)",
+    title: "Rekap Catering (Nama Karyawan)",
     href: "https://untr-my.sharepoint.com/:x:/r/personal/91317008_unitedtractors_com/Documents/Rekap%20Pemesanan%20Makan%20Siang%202026.xlsx?d=wedf9f0fecf8b40c796b3fdceaa56f7c2&csf=1&web=1&e=qu6yrz",
     iconSrc: "/Tableware.png",
     iconType: "png",
     description: "Rekap Pemesanan Makan Siang LJS",
+    category: "ADM",
+  },
+  {
+    id: "list-lut",
+    title: "List No LUT",
+    href: "https://bit.ly/ListNomorLUTLJS",
+    iconSrc: "/List.png",
+    iconType: "png",
+    description: "List Nomor LUT LJS",
     category: "ADM",
   },
   {

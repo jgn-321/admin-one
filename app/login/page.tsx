@@ -148,19 +148,19 @@ export default function LoginPage() {
             <Image
               src="/ut-logo.png"
               alt="United Tractors"
-              width={112}
-              height={28}
+              width={180}
+              height={52}
               className="object-contain max-h-full"
               priority
             />
           </div>
-          <div className="relative h-7 w-10 flex items-center justify-center">
+          <div className="relative h-12 w-24 flex items-center justify-center">
             <Image
               src="/gsi.png"
               alt="Global Service Indonesia"
-              width={40}
-              height={28}
-              className="object-contain max-h-full"
+              width={128}
+              height={128}
+              className="h-full w-full object-contain"
               priority
             />
           </div>
