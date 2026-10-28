@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroBanner } from "@/components/HeroBanner";
 import { CornerDecoration } from "@/components/CornerDecoration";
@@ -6,9 +8,12 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { CategoryTabs } from "@/components/CategoryTabs";
 import { ContactWidget } from "@/components/ContactWidget";
 import { QuickContactSidebar } from "@/components/QuickContactSidebar";
+import { QuickContactSidebar as QuickContactSidebarLjs } from "@/components/QuickContactSidebarLjs";
 import { SERVICE_ITEMS } from "@/data/services";
 
 export default function Home() {
+  const [openSidebar, setOpenSidebar] = useState<"gsi" | "ljs" | null>(null);
+
   return (
     <div className="min-h-screen flex flex-col relative isolate bg-[#f3f4f6] text-neutral-900 overflow-x-hidden">
       <CornerDecoration />
@@ -37,7 +42,18 @@ export default function Home() {
       </main>
 
       {/* Quick Contact Sidebar (only visible for specific NRPs) */}
-      <QuickContactSidebar />
+      <QuickContactSidebar
+        isOpen={openSidebar === "gsi"}
+        onOpenChange={(isOpen) => setOpenSidebar(isOpen ? "gsi" : null)}
+        isAnotherSidebarOpen={openSidebar === "ljs"}
+      />
+
+      {/* LJS Contact Sidebar */}
+      <QuickContactSidebarLjs
+        isOpen={openSidebar === "ljs"}
+        onOpenChange={(isOpen) => setOpenSidebar(isOpen ? "ljs" : null)}
+        isAnotherSidebarOpen={openSidebar === "gsi"}
+      />
     </div>
   );
 }

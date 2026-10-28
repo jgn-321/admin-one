@@ -9,12 +9,14 @@ interface NavbarProps {
   appName?: string;
   logoUT?: string;
   logoGSI?: string;
+  logoLJS?: string;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   appName = "ADMINONE",
   logoUT = "/ut-logo.png",
   logoGSI = "/gsi.png",
+  logoLJS = "/ljs.png",
 }) => {
   const { user, loading, logout } = useAuth();
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
@@ -71,6 +73,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Image
               src={logoGSI}
               alt="Global Service Indonesia"
+              width={64}
+              height={52}
+              className="object-contain w-auto h-full"
+              priority
+            />
+          </div>
+
+          {/* LJS Logo */}
+          <div className="relative h-10 md:h-12 w-14 md:w-16 flex items-center justify-center">
+            <Image
+              src={logoLJS}
+              alt="LJS"
               width={64}
               height={52}
               className="object-contain w-auto h-full"

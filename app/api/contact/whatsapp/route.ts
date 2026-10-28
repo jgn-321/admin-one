@@ -33,6 +33,41 @@ const CONTACT_CONFIG: Record<
     message:
       "Halo Pak Ariansyah, saya ingin berkonsultasi terkait Industrial Relation dan Legal.",
   },
+  isma: {
+    envKey: "WA_PHONE_ISMA",
+    name: "Isma Alfian",
+    message: "Halo Pak Isma, saya ingin berkonsultasi mengenai Administration.",
+  },
+  fredy: {
+    envKey: "WA_PHONE_FREDY",
+    name: "Fredy Adams",
+    message: "Halo Pak Fredy, saya ingin berkonsultasi mengenai ESR.",
+  },
+  shandy: {
+    envKey: "WA_PHONE_SHANDY",
+    name: "Shandy SN",
+    message: "Halo Pak Shandy, saya ingin berkonsultasi mengenai HC & PST.",
+  },
+  herry: {
+    envKey: "WA_PHONE_HERRY",
+    name: "Herry",
+    message: "Halo Pak Herry, saya ingin berkonsultasi mengenai Account Payable atau Benefit Perumahan.",
+  },
+  ayu: {
+    envKey: "WA_PHONE_AYU",
+    name: "Ayu Marinda",
+    message: "Halo Ibu Ayu, saya ingin berkonsultasi mengenai Cashier atau Perjalanan Dinas.",
+  },
+  nyanto: {
+    envKey: "WA_PHONE_NYANTO",
+    name: "Nyanto",
+    message: "Halo Pak Nyanto, saya ingin berkonsultasi mengenai General Affair atau Catering.",
+  },
+  indra: {
+    envKey: "WA_PHONE_INDRA",
+    name: "Indra Lesmana W",
+    message: "Halo Pak Indra, saya ingin berkonsultasi mengenai Account Receivable atau Support ESR.",
+  },
   support: {
     envKey: "WA_PHONE_SUPPORT",
     name: "Admin One United Tractors",

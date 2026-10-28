@@ -158,9 +158,19 @@ export default function LoginPage() {
             <Image
               src="/gsi.png"
               alt="Global Service Indonesia"
-              width={128}
-              height={128}
+              width={64}
+              height={52}
               className="h-full w-full object-contain"
+              priority
+            />
+          </div>
+          <div className="relative h-10 md:h-12 w-14 md:w-16 flex items-center justify-center">
+            <Image
+              src="/ljs.png"
+              alt="Global Service Indonesia"
+              width={64}
+              height={52}
+              className="object-contain w-auto h-full"
               priority
             />
           </div>
@@ -268,9 +278,8 @@ export default function LoginPage() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className={`transition-transform duration-200 ${
-                        isDropdownOpen ? "rotate-180" : ""
-                      }`}
+                      className={`transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""
+                        }`}
                     >
                       <polyline points="6 9 12 15 18 9" />
                     </svg>
