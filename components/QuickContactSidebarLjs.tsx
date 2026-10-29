@@ -30,7 +30,7 @@ const QUICK_CONTACTS: QuickContactPerson[] = [
   {
     id: "shandy",
     name: "Shandy SN",
-    role: "Admin HC & PST",
+    role: "Admin HC & PST, Payroll, Klaim Benefit UT One",
   },
   {
     id: "herry",
