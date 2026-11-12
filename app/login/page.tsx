@@ -128,7 +128,7 @@ export default function LoginPage() {
       <div className="pointer-events-none absolute left-1/2 top-0 h-[350px] w-[700px] -translate-x-1/2 bg-gradient-to-b from-yellow-500/10 via-yellow-500/5 to-transparent blur-3xl" />
 
       {/* Top Navigation */}
-      <header className="relative z-10 w-full border-b border-white/10">
+      <header className="relative z-10 w-full">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-6 sm:py-5">
           <Link
             href="/"
