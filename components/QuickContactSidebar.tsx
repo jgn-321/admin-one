@@ -12,7 +12,6 @@ interface QuickContactPerson {
 interface QuickContactSidebarProps {
   isOpen: boolean;
   onOpenChange: (isOpen: boolean) => void;
-  isAnotherSidebarOpen: boolean;
 }
 
 // 7 NRP yang diizinkan melihat sidebar khusus ini
@@ -58,7 +57,6 @@ const QUICK_CONTACTS: QuickContactPerson[] = [
 export const QuickContactSidebar: React.FC<QuickContactSidebarProps> = ({
   isOpen,
   onOpenChange,
-  isAnotherSidebarOpen,
 }) => {
   const { user } = useAuth();
 
@@ -71,18 +69,6 @@ export const QuickContactSidebar: React.FC<QuickContactSidebarProps> = ({
 
   return (
     <>
-      {/* Floating Toggle Button (muncul saat sidebar diminimalkan) */}
-      {!isOpen && !isAnotherSidebarOpen && (
-        <button
-          type="button"
-          onClick={() => onOpenChange(true)}
-          className="fixed right-0 top-24 z-50 bg-[#141414] text-[#EAB308] border border-neutral-700 border-r-0 rounded-l-lg px-3 py-3 shadow-2xl hover:bg-neutral-800 transition-all flex items-center gap-2 text-xs font-bold"
-          title="Buka Quick Contact"
-        >
-          <span>GSI HO Contact</span>
-        </button>
-      )}
-
       {/* Sidebar Panel persis seperti desain referensi */}
       <aside
         className={`fixed right-0 top-0 h-full w-[270px] sm:w-[305px] z-50 bg-[#141414] text-white flex flex-col shadow-2xl transition-transform duration-300 ease-in-out border-l border-neutral-800/80 ${

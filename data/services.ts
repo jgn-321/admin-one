@@ -148,8 +148,8 @@ export const SERVICE_ITEMS: ServiceItem[] = [
 ];
 
 export const CONTACT_DATA = {
-  title: "HUBUNGI SAYA.",
-  subtitle: "Jika terdapat masalah",
+  title: "Butuh bantuan?",
+  subtitle: "Tim support siap membantu Anda.",
   href: "https://api.whatsapp.com/send?phone=628111974100&text=Halo%20Admin%20One%20United%20Tractors",
   iconSrc: "/Headset.png",
 };

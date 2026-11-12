@@ -73,7 +73,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
       target={item.external ? "_blank" : "_self"}
       rel={item.external ? "noopener noreferrer" : undefined}
       aria-label={item.title}
-      className="group flex items-center gap-3.5 p-3 sm:p-3.5 bg-white rounded-lg shadow-sm border border-neutral-200/80 hover:shadow-md hover:border-yellow-400 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      className="group flex min-h-[82px] items-center gap-3 p-3 sm:gap-3.5 sm:p-3.5 bg-white rounded-xl shadow-sm border border-neutral-200/80 hover:shadow-md hover:border-yellow-400 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
     >
       {/* Black Square with Yellow Icon */}
       {renderIcon()}
@@ -83,6 +83,11 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ item }) => {
         <h3 className="font-bold text-gray-900 text-xs sm:text-[13px] leading-snug group-hover:text-amber-600 transition-colors line-clamp-2">
           {item.title}
         </h3>
+        {item.description && (
+          <p className="mt-0.5 text-[11px] leading-snug text-neutral-500 line-clamp-1 sm:text-xs">
+            {item.description}
+          </p>
+        )}
       </div>
     </a>
   );
